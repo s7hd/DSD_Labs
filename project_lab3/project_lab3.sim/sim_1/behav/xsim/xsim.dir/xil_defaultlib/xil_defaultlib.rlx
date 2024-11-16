@@ -1,0 +1,13 @@
+0.6
+2019.1
+May 24 2019
+14:51:52
+/home/it/project_lab3/project_lab3.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+/home/it/project_lab3/project_lab3.srcs/sim_1/new/priority_encoder_tb.sv,1731744561,systemVerilog,,,,priority_encoder_tb,,,,,,,,
+/home/it/project_lab3/project_lab3.srcs/sim_1/new/tb_7seg.sv,1731572212,systemVerilog,,,,tb_7seg,,,,,,,,
+/home/it/project_lab3/project_lab3.srcs/sim_1/new/tb_incrementer_beh.sv,1731744501,systemVerilog,,,,tb_incrementer_beh,,,,,,,,
+/home/it/project_lab3/project_lab3.srcs/sim_1/new/tb_rotatingword.sv,1731737055,systemVerilog,,,,tb_rotatingword,,,,,,,,
+/home/it/project_lab3/project_lab3.srcs/sources_1/new/incrementer_beh.sv,1731744501,systemVerilog,,/home/it/project_lab3/project_lab3.srcs/sim_1/new/tb_incrementer_beh.sv,,incrementer_beh,,,,,,,,
+/home/it/project_lab3/project_lab3.srcs/sources_1/new/priority_encoder.sv,1731744501,systemVerilog,,/home/it/project_lab3/project_lab3.srcs/sim_1/new/priority_encoder_tb.sv,,priority_encoder,,,,,,,,
+/home/it/project_lab3/project_lab3.srcs/sources_1/new/rotatingword.sv,1731739679,systemVerilog,,/home/it/project_lab3/project_lab3.srcs/sim_1/new/tb_rotatingword.sv,,rotatingword,,,,,,,,
+/home/it/project_lab3/project_lab3.srcs/sources_1/new/sev_seg.sv,1731571503,systemVerilog,,,,sev_seg,,,,,,,,
