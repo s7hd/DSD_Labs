@@ -1,0 +1,421 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Nov 19 16:43:13 2024
+# Process ID: 117107
+# Current directory: /home/it/lab4/lab4.runs/synth_1
+# Command line: vivado -log sev_seg_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sev_seg_top.tcl
+# Log file: /home/it/lab4/lab4.runs/synth_1/sev_seg_top.vds
+# Journal file: /home/it/lab4/lab4.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source sev_seg_top.tcl -notrace
+Command: synth_design -top sev_seg_top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 117143 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1777.840 ; gain = 154.688 ; free physical = 5467 ; free virtual = 13218
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'sev_seg_top' [/home/it/Desktop/vivado pins/task1/src/sev_seg.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'register' [/home/it/lab4/lab4.srcs/sources_1/new/register.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'flipflop' [/home/it/lab4/lab4.srcs/sources_1/new/flipflop.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'Dlatch' [/home/it/lab4/lab4.srcs/sources_1/new/Dlatch.sv:21]
+INFO: [Synth 8-6155] done synthesizing module 'Dlatch' (1#1) [/home/it/lab4/lab4.srcs/sources_1/new/Dlatch.sv:21]
+INFO: [Synth 8-6155] done synthesizing module 'flipflop' (2#1) [/home/it/lab4/lab4.srcs/sources_1/new/flipflop.sv:22]
+WARNING: [Synth 8-7023] instance 'f0' of module 'flipflop' has 6 connections declared, but only 5 given [/home/it/lab4/lab4.srcs/sources_1/new/register.sv:32]
+WARNING: [Synth 8-7023] instance 'f1' of module 'flipflop' has 6 connections declared, but only 5 given [/home/it/lab4/lab4.srcs/sources_1/new/register.sv:33]
+WARNING: [Synth 8-7023] instance 'f2' of module 'flipflop' has 6 connections declared, but only 5 given [/home/it/lab4/lab4.srcs/sources_1/new/register.sv:34]
+WARNING: [Synth 8-7023] instance 'f3' of module 'flipflop' has 6 connections declared, but only 5 given [/home/it/lab4/lab4.srcs/sources_1/new/register.sv:35]
+INFO: [Synth 8-6155] done synthesizing module 'register' (3#1) [/home/it/lab4/lab4.srcs/sources_1/new/register.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'sev_seg_controller' [/home/it/Desktop/vivado pins/task1/src/sev_seg_controller.sv:2]
+	Parameter display_speed bound to: 20 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'seven_seg_decoder' [/home/it/Desktop/vivado pins/task1/src/sev_seg_decoder.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'seven_seg_decoder' (4#1) [/home/it/Desktop/vivado pins/task1/src/sev_seg_decoder.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'decoder' [/home/it/Desktop/vivado pins/task1/src/decoder.sv:1]
+	Parameter n bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'decoder' (5#1) [/home/it/Desktop/vivado pins/task1/src/decoder.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'counter_n_bit' [/home/it/Desktop/vivado pins/task1/src/counter_n_bit.sv:1]
+	Parameter n bound to: 20 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter_n_bit' (6#1) [/home/it/Desktop/vivado pins/task1/src/counter_n_bit.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'sev_seg_controller' (7#1) [/home/it/Desktop/vivado pins/task1/src/sev_seg_controller.sv:2]
+WARNING: [Synth 8-3848] Net LED in module/entity sev_seg_top does not have driver. [/home/it/Desktop/vivado pins/task1/src/sev_seg.sv:8]
+INFO: [Synth 8-6155] done synthesizing module 'sev_seg_top' (8#1) [/home/it/Desktop/vivado pins/task1/src/sev_seg.sv:1]
+WARNING: [Synth 8-3917] design sev_seg_top has port DP driven by constant 1
+WARNING: [Synth 8-3331] design sev_seg_top has unconnected port LED[15]
+WARNING: [Synth 8-3331] design sev_seg_top has unconnected port LED[14]
+WARNING: [Synth 8-3331] design sev_seg_top has unconnected port LED[13]
+WARNING: [Synth 8-3331] design sev_seg_top has unconnected port LED[12]
+WARNING: [Synth 8-3331] design sev_seg_top has unconnected port LED[11]
+WARNING: [Synth 8-3331] design sev_seg_top has unconnected port LED[10]
+WARNING: [Synth 8-3331] design sev_seg_top has unconnected port LED[9]
+WARNING: [Synth 8-3331] design sev_seg_top has unconnected port LED[8]
+WARNING: [Synth 8-3331] design sev_seg_top has unconnected port LED[7]
+WARNING: [Synth 8-3331] design sev_seg_top has unconnected port LED[6]
+WARNING: [Synth 8-3331] design sev_seg_top has unconnected port LED[5]
+WARNING: [Synth 8-3331] design sev_seg_top has unconnected port LED[4]
+WARNING: [Synth 8-3331] design sev_seg_top has unconnected port LED[3]
+WARNING: [Synth 8-3331] design sev_seg_top has unconnected port LED[2]
+WARNING: [Synth 8-3331] design sev_seg_top has unconnected port LED[1]
+WARNING: [Synth 8-3331] design sev_seg_top has unconnected port LED[0]
+WARNING: [Synth 8-3331] design sev_seg_top has unconnected port SW[15]
+WARNING: [Synth 8-3331] design sev_seg_top has unconnected port SW[14]
+WARNING: [Synth 8-3331] design sev_seg_top has unconnected port SW[13]
+WARNING: [Synth 8-3331] design sev_seg_top has unconnected port SW[12]
+WARNING: [Synth 8-3331] design sev_seg_top has unconnected port SW[11]
+WARNING: [Synth 8-3331] design sev_seg_top has unconnected port SW[10]
+WARNING: [Synth 8-3331] design sev_seg_top has unconnected port SW[9]
+WARNING: [Synth 8-3331] design sev_seg_top has unconnected port SW[7]
+WARNING: [Synth 8-3331] design sev_seg_top has unconnected port SW[6]
+WARNING: [Synth 8-3331] design sev_seg_top has unconnected port SW[5]
+WARNING: [Synth 8-3331] design sev_seg_top has unconnected port SW[4]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1832.590 ; gain = 209.438 ; free physical = 5408 ; free virtual = 13160
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1838.527 ; gain = 215.375 ; free physical = 5420 ; free virtual = 13171
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1838.527 ; gain = 215.375 ; free physical = 5420 ; free virtual = 13171
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/it/Desktop/vivado pins/pin-assignment.xdc]
+WARNING: [Vivado 12-507] No nets matched 'BTNC_IBUF'. [/home/it/Desktop/vivado pins/pin-assignment.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/it/Desktop/vivado pins/pin-assignment.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/it/Desktop/vivado pins/pin-assignment.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/it/Desktop/vivado pins/pin-assignment.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/sev_seg_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/sev_seg_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2001.246 ; gain = 0.000 ; free physical = 5356 ; free virtual = 13108
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2001.246 ; gain = 0.000 ; free physical = 5356 ; free virtual = 13108
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2001.246 ; gain = 378.094 ; free physical = 5407 ; free virtual = 13159
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2001.246 ; gain = 378.094 ; free physical = 5407 ; free virtual = 13159
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2001.246 ; gain = 378.094 ; free physical = 5407 ; free virtual = 13159
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2001.246 ; gain = 378.094 ; free physical = 5407 ; free virtual = 13160
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module counter_n_bit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design sev_seg_top has port DP driven by constant 1
+WARNING: [Synth 8-3331] design sev_seg_top has unconnected port LED[15]
+WARNING: [Synth 8-3331] design sev_seg_top has unconnected port LED[14]
+WARNING: [Synth 8-3331] design sev_seg_top has unconnected port LED[13]
+WARNING: [Synth 8-3331] design sev_seg_top has unconnected port LED[12]
+WARNING: [Synth 8-3331] design sev_seg_top has unconnected port LED[11]
+WARNING: [Synth 8-3331] design sev_seg_top has unconnected port LED[10]
+WARNING: [Synth 8-3331] design sev_seg_top has unconnected port LED[9]
+WARNING: [Synth 8-3331] design sev_seg_top has unconnected port LED[8]
+WARNING: [Synth 8-3331] design sev_seg_top has unconnected port LED[7]
+WARNING: [Synth 8-3331] design sev_seg_top has unconnected port LED[6]
+WARNING: [Synth 8-3331] design sev_seg_top has unconnected port LED[5]
+WARNING: [Synth 8-3331] design sev_seg_top has unconnected port LED[4]
+WARNING: [Synth 8-3331] design sev_seg_top has unconnected port LED[3]
+WARNING: [Synth 8-3331] design sev_seg_top has unconnected port LED[2]
+WARNING: [Synth 8-3331] design sev_seg_top has unconnected port LED[1]
+WARNING: [Synth 8-3331] design sev_seg_top has unconnected port LED[0]
+WARNING: [Synth 8-3331] design sev_seg_top has unconnected port SW[15]
+WARNING: [Synth 8-3331] design sev_seg_top has unconnected port SW[14]
+WARNING: [Synth 8-3331] design sev_seg_top has unconnected port SW[13]
+WARNING: [Synth 8-3331] design sev_seg_top has unconnected port SW[12]
+WARNING: [Synth 8-3331] design sev_seg_top has unconnected port SW[11]
+WARNING: [Synth 8-3331] design sev_seg_top has unconnected port SW[10]
+WARNING: [Synth 8-3331] design sev_seg_top has unconnected port SW[9]
+WARNING: [Synth 8-3331] design sev_seg_top has unconnected port SW[7]
+WARNING: [Synth 8-3331] design sev_seg_top has unconnected port SW[6]
+WARNING: [Synth 8-3331] design sev_seg_top has unconnected port SW[5]
+WARNING: [Synth 8-3331] design sev_seg_top has unconnected port SW[4]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2001.246 ; gain = 378.094 ; free physical = 5408 ; free virtual = 13162
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2001.246 ; gain = 378.094 ; free physical = 5325 ; free virtual = 13079
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2001.246 ; gain = 378.094 ; free physical = 5309 ; free virtual = 13063
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+Found timing loop:
+     0: i_27/O (LUT2)
+     1: i_27/I0 (LUT2)
+     2: i_10/O (LUT4)
+     3: i_10/I0 (LUT4)
+     4: i_27/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/it/Desktop/vivado pins/task1/src/sev_seg.sv:1]
+Inferred a: "set_disable_timing -from I0 -to O i_27"
+Found timing loop:
+     0: i_23/O (LUT2)
+     1: i_23/I0 (LUT2)
+     2: i_11/O (LUT4)
+     3: i_11/I0 (LUT4)
+     4: i_23/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/it/Desktop/vivado pins/task1/src/sev_seg.sv:1]
+Inferred a: "set_disable_timing -from I0 -to O i_23"
+Found timing loop:
+     0: i_28/O (LUT2)
+     1: i_28/I0 (LUT2)
+     2: i_12/O (LUT4)
+     3: i_12/I0 (LUT4)
+     4: i_28/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/it/Desktop/vivado pins/task1/src/sev_seg.sv:1]
+Inferred a: "set_disable_timing -from I0 -to O i_28"
+Found timing loop:
+     0: i_24/O (LUT2)
+     1: i_24/I0 (LUT2)
+     2: i_13/O (LUT4)
+     3: i_13/I0 (LUT4)
+     4: i_24/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/it/Desktop/vivado pins/task1/src/sev_seg.sv:1]
+Inferred a: "set_disable_timing -from I0 -to O i_24"
+Found timing loop:
+     0: i_25/O (LUT2)
+     1: i_25/I0 (LUT2)
+     2: i_6/O (LUT4)
+     3: i_6/I0 (LUT4)
+     4: i_25/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/it/Desktop/vivado pins/task1/src/sev_seg.sv:1]
+Inferred a: "set_disable_timing -from I0 -to O i_25"
+Found timing loop:
+     0: i_21/O (LUT2)
+     1: i_21/I0 (LUT2)
+     2: i_7/O (LUT4)
+     3: i_7/I0 (LUT4)
+     4: i_21/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/it/Desktop/vivado pins/task1/src/sev_seg.sv:1]
+Inferred a: "set_disable_timing -from I0 -to O i_21"
+Found timing loop:
+     0: i_26/O (LUT2)
+     1: i_26/I0 (LUT2)
+     2: i_8/O (LUT4)
+     3: i_8/I0 (LUT4)
+     4: i_26/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/it/Desktop/vivado pins/task1/src/sev_seg.sv:1]
+Inferred a: "set_disable_timing -from I0 -to O i_26"
+Found timing loop:
+     0: i_22/O (LUT2)
+     1: i_22/I0 (LUT2)
+     2: i_9/O (LUT4)
+     3: i_9/I0 (LUT4)
+     4: i_22/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/it/Desktop/vivado pins/task1/src/sev_seg.sv:1]
+Inferred a: "set_disable_timing -from I0 -to O i_22"
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2001.246 ; gain = 378.094 ; free physical = 5309 ; free virtual = 13063
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2001.246 ; gain = 378.094 ; free physical = 5309 ; free virtual = 13063
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2001.246 ; gain = 378.094 ; free physical = 5309 ; free virtual = 13063
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2001.246 ; gain = 378.094 ; free physical = 5309 ; free virtual = 13063
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2001.246 ; gain = 378.094 ; free physical = 5309 ; free virtual = 13063
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2001.246 ; gain = 378.094 ; free physical = 5309 ; free virtual = 13063
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2001.246 ; gain = 378.094 ; free physical = 5309 ; free virtual = 13063
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     5|
+|3     |LUT1   |     2|
+|4     |LUT3   |     8|
+|5     |LUT4   |     7|
+|6     |LUT5   |    11|
+|7     |LUT6   |     1|
+|8     |FDRE   |    20|
+|9     |IBUF   |     8|
+|10    |OBUF   |    16|
+|11    |OBUFT  |    16|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------+-------------------+------+
+|      |Instance    |Module             |Cells |
++------+------------+-------------------+------+
+|1     |top         |                   |    95|
+|2     |  ssc       |sev_seg_controller |    46|
+|3     |    counter |counter_n_bit      |    46|
++------+------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2001.246 ; gain = 378.094 ; free physical = 5309 ; free virtual = 13063
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 8 critical warnings and 28 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2001.246 ; gain = 215.375 ; free physical = 5309 ; free virtual = 13063
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2001.246 ; gain = 378.094 ; free physical = 5309 ; free virtual = 13063
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2001.246 ; gain = 0.000 ; free physical = 5332 ; free virtual = 13086
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+28 Infos, 62 Warnings, 9 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2001.246 ; gain = 581.254 ; free physical = 5366 ; free virtual = 13121
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2001.246 ; gain = 0.000 ; free physical = 5366 ; free virtual = 13121
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/it/lab4/lab4.runs/synth_1/sev_seg_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file sev_seg_top_utilization_synth.rpt -pb sev_seg_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 19 16:43:43 2024...
